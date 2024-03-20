@@ -9,7 +9,7 @@ const CONTAINER_SIZES: Record<string, string> = {
   md: rem(600),
   lg: rem(700),
   xl: rem(1500),
-  xxl: rem(900)
+  xxl: rem(1800)
 }
 
 export const theme = createTheme({

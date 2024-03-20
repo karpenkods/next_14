@@ -8,11 +8,18 @@ const CONTAINER_SIZES: Record<string, string> = {
   sm: rem(500),
   md: rem(600),
   lg: rem(700),
-  xl: rem('1400px'),
-  xxl: rem(900)
+  xl: rem(1500),
+  xxl: rem(1800)
 }
 
 export const theme = createTheme({
+  breakpoints: {
+    xs: '360px',
+    sm: '600px',
+    md: '900px',
+    lg: '1200px',
+    xl: '1440px'
+  },
   components: {
     Container: Container.extend({
       vars: (_, { size, fluid }) => ({
